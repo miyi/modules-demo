@@ -1,0 +1,32 @@
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="module"
+      crossorigin="anonymous"
+      src="js/dagger.js"
+      defer
+    ></script>
+    <script type="dagger/modules">
+      {
+        hello: "/hello.html",
+      }
+    </script>
+    <title>dagger demo page</title>
+  </head>
+  <!-- div_pos = mouse_1 - mouse_0 -->
+  <body +loading="{scope: null}">
+    <hello></hello>
+    <hello.world></hello.world>
+    <div +loading="{name: 'ming', age: 19}">
+      <h1>
+        ${name}
+      </h1>
+      <div>
+        ${age}
+      </div>
+    </div>
+  </body>
+</html>
