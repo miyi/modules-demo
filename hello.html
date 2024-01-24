@@ -2,15 +2,14 @@
   <script type="dagger/modules">
     {
       view: "#view",
-      world: "./world.html"
-      js: "hello.js"
+      js: "./hello.js",
+      css: "./hello.css"
     }
   </script>
   <template id="view">
-    <div>hello</div>
-    <world></world>
-    <div>
-      ${data}
-    </div>
+    <button class="button" +click="popConfetti()">
+      <span>🎉</span>
+      <span>say hello</span>
+    </button>
   </template>
 </html>

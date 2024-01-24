@@ -1,0 +1,17 @@
+.button {
+  background-color: #404663;
+  color: #fff;
+  border: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0.5em 1.25em;
+  border-radius: 0.5em;
+  z-index: 999;
+  position: relative;
+  display: flex;
+  gap: 0.5em;
+}
+
+.button:active {
+  transform: scale(1.01);
+}
